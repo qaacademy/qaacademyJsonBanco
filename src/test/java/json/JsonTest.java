@@ -11,4 +11,9 @@ public class JsonTest {
         String valor = manipulandoJson.criandoJson();
         Assert.assertEquals("Silas", valor);
     }
+    @Test
+    public void lerJson(){
+        ManipulandoJson manipulandoJson = new ManipulandoJson();
+        manipulandoJson.navegarJsonArquivo();
+    }
 }
